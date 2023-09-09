@@ -1,0 +1,31 @@
+<div class="overlay" data-closed></div>
+
+<div id="project-popup" class="popup-project popup">
+  <h2 class="popup__title title">Заказать проект</h2>
+  <p class="popup__subtitle subtitle">Оставьте контакты и выберите свободную дату</p>
+
+  <div class="popup__close" data-closed>
+    <svg class="popup__icon-cross">
+      <use xlink:href="./img/icons/icons.svg#iconClose"></use>
+    </svg>
+  </div>
+
+  <form class="popup-project__form form" id="project-form">
+    <div class="popup-project__input-wrap input-wrap input-wrap_name">
+      <input class="project-popup__input input input_name" name="user-name" type="text" placeholder="Имя">
+    </div>
+    <div class="popup-project__input-wrap input-wrap input-wrap_phone">
+      <input class="project-popup__input input input_phone" type="text" data-mask="phone">
+    </div>
+    <div class="popup-project__input-wrap input-wrap">
+      <input type="date" class="input input_date" name="date">
+    </div>
+    <button class="btn popup-project__btn_primary btn_primary" type="submit" data-finish-popup="finish-popup">Заказать
+      проект</button>
+    <div class="popup-project__check">
+      <input checked type="checkbox" class="custom-checkbox" id="checkbox2">
+      <label for="checkbox2"><a class="popup-project__secondary-link secondary-link" href="#">Даю согласие
+          на обработку данных</a></label>
+    </div>
+  </form>
+</div>

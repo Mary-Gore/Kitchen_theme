@@ -1,0 +1,21 @@
+  // base
+  $content-width: 1306px;
+  $container-offset: 30px;
+  $container-tab-offset: 20px;
+  $container-mob-offset: 15px;
+  $container-width: calc($content-width + ($container-offset * 2));
+
+  // colors
+  $accent : #BB9147;
+  $accent-hover: #C18B2B;
+  $accent-active: #A36A07;
+  $disabled-btn: #CDB07E;
+  $dark-bg: #121212;
+  $grey-bg: #222325;
+  $light-grey: #888888;
+  $muted: rgba(255, 255, 255, 0.7);
+  $card-color: #222325;
+  $footer-color: #212325;
+  $secondary: rgba(255, 255, 255, 0.4);
+  $social-hover: $accent;
+  $social-active: $accent-hover;

@@ -1,0 +1,176 @@
+.reviews {
+  background-color: $dark-bg;
+
+  &__section {
+    @include tablet {
+      padding-top: 0;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    @include mobile {
+      top: -30px;
+    }
+  }
+
+  &__swiper {
+    position: relative;
+    max-width: 817px;
+    height: 573px;
+  }
+
+  .swiper-wrapper {
+    position: absolute;
+    top: 105px;
+
+  }
+
+  &__circle {
+    position: relative;
+    left: 50%;
+    bottom: 105px;
+    transform: translateX(-50%);
+    width: 210px;
+    height: 210px;
+    background: $card-color;
+    border-radius: 100%;
+    z-index: 2;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 160px;
+      height: 160px;
+      border-radius: 100%;
+      border: 2px solid $accent;
+      object-fit: cover;
+
+      @include mobile {
+        width: 104px;
+        height: 104px;
+      }
+    }
+
+    @include mobile {
+      width: 140px;
+      height: 140px;
+      bottom: 70px;
+    }
+  }
+
+  &__card {
+    position: relative;
+    min-height: 468px;
+    border-radius: 20px;
+    background-color: $card-color;
+    z-index: 1;
+
+    &-title {
+      margin: 45px 0 15px;
+      font-size: 18px;
+      font-weight: 500;
+
+      @include mobile {
+        margin: 30px 0 12px;
+        font-size: 16px;
+      }
+    }
+
+    &-text {
+      margin: 0 auto;
+      min-width: 520px;
+      max-width: 600px;
+
+      @include mobile {
+        min-width: 220px;
+        max-width: 220px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    @include mobile {
+      min-height: unset;
+      height: 370px;
+    }
+  }
+
+  &__card-content {
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    @include mobile {
+      top: 70px;
+      max-width: 200px;
+    }
+  }
+
+  &__left-quote {
+    position: absolute;
+    top: 40px;
+    left: -80px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__right-quote {
+    position: absolute;
+    right: -80px;
+    bottom: -40px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__iconQuote {
+    width: 17px;
+    height: 13px;
+    fill: $accent;
+  }
+
+  &__iconQuote_right {
+    transform: rotate(180deg);
+  }
+
+  &__iconVK {
+    margin-right: 12px;
+    width: 18px;
+    height: 10px;
+    fill: #fff;
+    stroke: #fff;
+
+    &:hover {
+      fill: $accent;
+      stroke: $accent;
+    }
+  }
+
+  &__navigation {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 70px;
+    transform: translateX(-50%);
+    bottom: 73px;
+    z-index: 3;
+
+    @include mobile {
+      bottom: 140px;
+    }
+  }
+}

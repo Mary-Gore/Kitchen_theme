@@ -1,0 +1,91 @@
+.input-wrap {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 45px;
+
+    @include tablet {
+      left: 35px;
+    }
+  }
+
+  &_name {
+    &::before {
+      content: "";
+      background: url("../img/iconPersona.svg") no-repeat;
+      background-size: cover;
+      top: 22px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &_phone {
+    &::before {
+      content: "";
+      background: url("../img/iconFillPhone.svg") no-repeat;
+      background-size: cover;
+      top: 22px;
+      width: 14px;
+      height: 15px;
+    }
+  }
+
+  .input {
+    padding: 20px 20px 20px 72px;
+    width: 100%;
+    border-radius: 6px;
+    border: 2px solid $muted;
+    font-weight: 600;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: 'lnum';
+
+    &::-webkit-input-placeholder {
+      color: $muted;
+      font-weight: 600;
+    }
+
+    &::-moz-placeholder {
+      color: $muted;
+      font-weight: 600;
+    }
+
+    &_phone {
+      color: $muted;
+
+      &--active {
+        color: #fff;
+      }
+    }
+
+    &_date {
+      padding-left: 50px;
+
+      &::-webkit-calendar-picker-indicator {
+        position: absolute;
+        opacity: 1;
+        display: block;
+        background: url("../img/iconCalendar.svg") no-repeat;
+        width: 14px;
+        height: 14px;
+        left: 45px;
+        cursor: pointer;
+      }
+
+      &::-webkit-datetime-edit-fields-wrapper {
+        position: relative;
+        left: 12px;
+      }
+
+      &::-webkit-datetime-edit {
+        position: relative;
+        left: 12px;
+      }
+    }
+
+    @include tablet {
+      padding: 20px 20px 20px 60px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.phone-content {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+}

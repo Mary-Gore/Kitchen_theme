@@ -1,0 +1,117 @@
+.offer {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
+      rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg.jpg") no-repeat;
+  height: 650px;
+
+  &__subtitle {
+    margin-bottom: 60px;
+    max-width: 350px;
+    text-align: left;
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+    @include mobile {
+      margin: 0 auto 70px;
+      font-size: 16px;
+      max-width: 235px;
+      text-align: center;
+    }
+  }
+
+  &__container {
+    position: relative;
+    height: 100%;
+  }
+
+  &__content {
+    margin-top: 62px;
+
+    @include tablet {
+      margin-top: 100px;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    max-width: 500px;
+    font-family: "Merriweather", serif;
+    font-size: 50px;
+    font-weight: 700;
+
+    @include tablet {
+      max-width: 350px;
+      font-size: 35px;
+    }
+
+    @include mobile {
+      margin: 0 auto 12px;
+      max-width: 245px;
+      font-size: 25px;
+    }
+  }
+
+  &__cards {
+    position: absolute;
+    bottom: -115px;
+    right: 0;
+    display: flex;
+
+    &-round {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      width: 46px;
+      height: 46px;
+      border: 2px solid rgba(187, 145, 71, 0.7);
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    &-text {
+      font-size: 14px;
+    }
+
+    @include tablet {
+      left: 20px;
+      right: 20px;
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+      bottom: -580px;
+      left: 50%;
+      right: unset;
+      max-width: unset;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__glass-card {
+    padding: 23px 0 23px 20px;
+    width: 238px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      @include small-tablet {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @include tablet {
+    background-position: 70% center;
+  }
+}

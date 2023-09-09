@@ -1,0 +1,190 @@
+.footer {
+  padding: 50px 0 40px;
+  background-color: $footer-color;
+
+  &__main-wrapper {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__politics {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+
+
+    &-item {
+      max-width: 170px;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+
+        @include mobile {
+          margin-bottom: 12px;
+        }
+      }
+    }
+
+    @include tablet {
+      margin-top: 35px;
+    }
+
+    @include mobile {
+      margin-top: 30px;
+      align-items: center;
+    }
+  }
+
+  &__menu {
+    display: block;
+    margin: 0 auto 0 154px;
+    column-count: 3;
+    column-gap: 5em;
+
+    &-item {
+      margin-bottom: 20px;
+
+      @include mobile {
+        margin-bottom: 15px;
+      }
+    }
+
+    @include tablet {
+      margin: 0 0 0 80px;
+      column-gap: 3em;
+    }
+
+    @include mobile {
+      margin: 35px 0 40px 0px;
+      column-count: 1;
+      column-gap: unset;
+    }
+  }
+
+  &__ul-title {
+    font-weight: 600;
+  }
+
+  &__social {
+    margin-top: 20px;
+
+    &-icon {
+      &_VK {
+        margin-right: 15px;
+        width: 17px;
+        height: 9px;
+      }
+
+      &_IG {
+        margin-right: 15px;
+        width: 13px;
+        height: 13px;
+      }
+
+      &_FB {
+        width: 7px;
+        height: 15px;
+      }
+    }
+  }
+
+  &__phone-block {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: flex;
+    }
+  }
+
+  &__phone-content {
+    margin-left: auto;
+
+    @include mobile {
+      display: none !important;
+    }
+  }
+
+  &__btn-secondary {
+    margin-bottom: 25px;
+
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  &__secondary-border {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: $secondary;
+    }
+  }
+
+  &__secondary-wrapper {
+    margin-top: 40px;
+
+    @include mobile {
+      margin-top: 45px;
+    }
+  }
+
+  &__secondary-list {
+    display: flex;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__secondary-item {
+    margin-top: 15px;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+
+      @include tablet {
+        margin-right: 50px;
+      }
+
+      @include mobile {
+        margin-top: 12px;
+      }
+    }
+
+    &:last-child {
+      margin-left: auto;
+
+      @include mobile {
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+
+  @include tablet {
+    padding: 40px 0 40px;
+  }
+
+  @include mobile {
+    padding: 35px 0 30px;
+  }
+
+  &__inner-ul {
+    @include mobile {
+      display: none;
+    }
+  }
+}
