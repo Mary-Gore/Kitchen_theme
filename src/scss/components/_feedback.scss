@@ -1,13 +1,6 @@
 .feedback {
   background-color: $grey-bg;
 
-  &__section {
-
-    @include tablet {
-      padding-top: 0;
-    }
-  }
-
   &__form {
     display: flex;
     justify-content: center;
