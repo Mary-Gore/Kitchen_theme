@@ -112,4 +112,8 @@
       }
     }
   }
+
+  @include tablet {
+    background-position: 70% center;
+  }
 }
