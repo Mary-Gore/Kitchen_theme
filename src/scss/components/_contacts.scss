@@ -1,5 +1,4 @@
 .contacts {
-  padding: 0;
   position: relative;
   height: 780px;
 
@@ -176,12 +175,10 @@
   }
 
   @include tablet {
-    padding: 0;
     height: 740px;
   }
 
   @include mobile {
-    padding: 0;
-    height: 570px;
+   height: 570px;
   }
 }
