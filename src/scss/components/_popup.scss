@@ -41,8 +41,14 @@
     max-width: 360px;
     font-size: 22px;
 
+
     @include tablet {
       margin-bottom: 40px;
+    }
+
+
+    @include small-tablet {
+      max-width: 100%;
     }
 
     @include mobile {
