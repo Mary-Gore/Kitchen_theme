@@ -46,9 +46,9 @@
       margin-bottom: 40px;
     }
 
-
     @include small-tablet {
-      max-width: 100%;
+      max-width: unset;
+      width: 100%;
     }
 
     @include mobile {
