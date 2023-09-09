@@ -1,9 +1,7 @@
 .offer {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
-      rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg.jpg") no-repeat;
+      rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg.jpg") no-repeat 50%;
   height: 650px;
-  background-size: cover;
-  background-position: center;
 
   &__subtitle {
     margin-bottom: 60px;
@@ -114,6 +112,7 @@
   }
 
   @include tablet {
-    background-position: 70% center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
+        rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg.jpg") no-repeat 70%;
   }
 }
