@@ -47,13 +47,13 @@
     }
 
     @include small-tablet {
-      max-width: unset;
-      width: 100%;
+      max-width: 100%;
     }
 
     @include mobile {
       margin-bottom: 30px;
       font-size: 18px;
+      max-width: 100%;
     }
   }
 
