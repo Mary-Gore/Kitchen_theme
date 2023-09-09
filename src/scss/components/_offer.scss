@@ -114,6 +114,6 @@
   }
 
   @include tablet {
-    background-position: 90% center;
+    background-position: 90% center !important;
   }
 }
