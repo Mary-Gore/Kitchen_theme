@@ -311,6 +311,29 @@ legend {
 }
 
 /* Btn */
+.btn-prev {
+  position: relative;
+  width: 23px;
+  height: 16px;
+}
+.btn-prev::before {
+  content: url("../img/iconArrow.svg");
+  position: absolute;
+  height: 100%;
+}
+
+.btn-next {
+  position: relative;
+  width: 23px;
+  height: 16px;
+}
+.btn-next::before {
+  content: url("../img/iconArrow.svg");
+  position: absolute;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
 button[type=submit] {
   pointer-events: none;
   background-color: #CDB07E;
@@ -1003,53 +1026,46 @@ button[type=submit].is-active {
     height: 100% !important;
   }
 }
-.gallery-nav-wrap {
+.gallery__nav-wrap {
   margin-top: 60px;
   display: flex;
   justify-content: center;
   max-height: 16px;
 }
-.gallery-btn-prev {
+.gallery__btn-prev {
   position: relative;
   width: 23px;
   height: 16px;
 }
-.gallery-btn-prev::before {
-  content: url("../img/iconArrow.svg");
-  position: absolute;
-  height: 100%;
+.gallery__btn-prev::before {
   top: 50%;
   margin-top: -8px;
   left: -48px;
 }
-.gallery-btn-next {
+.gallery__btn-next {
   position: relative;
   width: 23px;
   height: 16px;
 }
-.gallery-btn-next::before {
+.gallery__btn-next::before {
   top: 50%;
   margin-top: -8px;
   right: -48px;
-  content: url("../img/iconArrow.svg");
-  position: absolute;
-  height: 100%;
-  transform: rotate(180deg);
 }
-.gallery-fraction {
+.gallery__fraction {
   line-height: 1;
   width: auto !important;
 }
-.gallery-fraction .swiper-pagination-current {
+.gallery__fraction .swiper-pagination-current {
   margin-right: 10px;
   color: #BB9147;
   font-weight: 500;
 }
-.gallery-fraction .frac-slash {
+.gallery__fraction .frac-slash {
   position: relative;
   color: #888888;
 }
-.gallery-fraction .frac-slash::before {
+.gallery__fraction .frac-slash::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1058,7 +1074,7 @@ button[type=submit].is-active {
   background-color: #888888;
   height: 16px;
 }
-.gallery-fraction .swiper-pagination-total {
+.gallery__fraction .swiper-pagination-total {
   margin-left: 10px;
   color: #888888;
 }
@@ -1221,7 +1237,7 @@ button[type=submit].is-active {
   fill: #BB9147;
   stroke: #BB9147;
 }
-.reviews-navigation {
+.reviews__navigation {
   position: absolute;
   left: 50%;
   display: flex;
@@ -1232,30 +1248,9 @@ button[type=submit].is-active {
   z-index: 3;
 }
 @media (max-width: 576px) {
-  .reviews-navigation {
+  .reviews__navigation {
     bottom: 40px;
   }
-}
-.reviews-btn-prev {
-  position: relative;
-  width: 23px;
-  height: 16px;
-}
-.reviews-btn-prev::before {
-  content: url("../img/iconArrow.svg");
-  position: absolute;
-  height: 100%;
-}
-.reviews-btn-next {
-  position: relative;
-  width: 23px;
-  height: 16px;
-}
-.reviews-btn-next::before {
-  content: url("../img/iconArrow.svg");
-  position: absolute;
-  height: 100%;
-  transform: rotate(180deg);
 }
 
 .contacts {

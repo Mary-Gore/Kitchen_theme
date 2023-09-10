@@ -6,7 +6,7 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
   speed: 800,
 
   pagination: {
-    el: '.gallery-fraction',
+    el: '.gallery__fraction',
     type: 'fraction',
     formatFractionCurrent: function (number) {
       return ('0' + number).slice(-2);
@@ -21,8 +21,8 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
     }
   },
   navigation: {
-    nextEl: ".gallery-btn-next",
-    prevEl: ".gallery-btn-prev",
+    nextEl: ".gallery__btn-next",
+    prevEl: ".gallery__btn-prev",
   },
   breakpoints: {
     992: {

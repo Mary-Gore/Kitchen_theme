@@ -329,6 +329,32 @@ legend {
 }
 
 /* Btn */
+
+.btn-prev {
+  position: relative;
+  width: 23px;
+  height: 16px;
+
+  &::before {
+    content: url("../img/iconArrow.svg");
+    position: absolute;
+    height: 100%;
+  }
+}
+
+.btn-next {
+  position: relative;
+  width: 23px;
+  height: 16px;
+
+  &::before {
+    content: url("../img/iconArrow.svg");
+    position: absolute;
+    height: 100%;
+    transform: rotate(180deg);
+  }
+}
+
 button[type="submit"] {
   pointer-events: none;
   background-color: $disabled-btn;

@@ -59,8 +59,8 @@ export const loadReviews = () => {
       speed: 800,
       spaceBetween: 10,
       navigation: {
-        nextEl: ".reviews-btn-next",
-        prevEl: ".reviews-btn-prev",
+        nextEl: ".reviews__btn-next",
+        prevEl: ".reviews__btn-prev",
       },
     });
   }
