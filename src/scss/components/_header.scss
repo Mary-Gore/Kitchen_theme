@@ -80,8 +80,8 @@
   &__burger-wrapper {
     width: 20px;
     height: 14px;
-    align-self: self-start;
     display: none;
+    align-self: flex-start;
 
     @include mobile {
       display: block;
