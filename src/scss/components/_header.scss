@@ -42,7 +42,7 @@
     flex-direction: column;
     align-items: flex-end;
 
-    @include small-tablet {
+    @include mobile {
       display: none;
     }
   }
@@ -75,10 +75,6 @@
         }
       }
     }
-
-    @include small-tablet {
-      display: none;
-    }
   }
 
   &__burger-wrapper {
@@ -87,7 +83,7 @@
     align-self: self-start;
     display: none;
 
-    @include small-tablet {
+    @include mobile {
       display: block;
     }
   }
