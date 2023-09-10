@@ -52,16 +52,7 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
   }
 });
 
-// Reviews slider
-const reviewsSwiper = new Swiper('.reviews__swiper', {
-  loop: true,
-  speed: 800,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".reviews-btn-next",
-    prevEl: ".reviews-btn-prev",
-  },
-});
+
 
 
 

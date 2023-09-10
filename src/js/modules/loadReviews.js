@@ -1,3 +1,6 @@
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
+
 export const loadReviews = () => {
   const renderReviews = arr => {
     const reviewsSwiperWrapper = document.querySelector('.reviews__swiper-wrapper');
@@ -49,6 +52,17 @@ export const loadReviews = () => {
     for (const i in data[0]) {
       renderReviews(data[0][i]);
     }
+
+    // Reviews slider
+    const reviewsSwiper = new Swiper('.reviews__swiper', {
+      loop: true,
+      speed: 800,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".reviews-btn-next",
+        prevEl: ".reviews-btn-prev",
+      },
+    });
   }
 
   getData('https://kitchen-theme-dda60-default-rtdb.europe-west1.firebasedatabase.app/db.json')
