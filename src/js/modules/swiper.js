@@ -35,14 +35,19 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
     },
     577: {
       slidesPerView: 2,
-      slidesPerGroup: 4,
+      slidesPerGroup: 2,
 
       grid: {
         rows: 2
       }
     },
     320: {
-      slidesPerView: 1
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+
+      grid: {
+        rows: 1
+      }
     }
   }
 });

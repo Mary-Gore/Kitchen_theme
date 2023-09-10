@@ -66,9 +66,18 @@
     }
 
     &:hover {
+
       &::after {
         width: 100%;
+
+        @include tablet {
+          width: 0;
+        }
       }
+    }
+
+    @include small-tablet {
+      display: none;
     }
   }
 

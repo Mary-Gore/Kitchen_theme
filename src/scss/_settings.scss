@@ -302,6 +302,10 @@ legend {
   &:hover {
     &::after {
       width: 100%;
+
+      @include tablet {
+        width: 0;
+      }
     }
   }
 }
@@ -427,6 +431,10 @@ button[type="submit"].is-active {
     &:hover {
       &::after {
         width: 100%;
+
+        @include tablet {
+          width: 0;
+        }
       }
     }
   }
