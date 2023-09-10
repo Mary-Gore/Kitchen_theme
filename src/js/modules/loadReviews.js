@@ -60,7 +60,7 @@ export const loadReviews = () => {
       spaceBetween: 10,
       navigation: {
         nextEl: ".reviews__btn-next",
-        prevEl: ".reviews__btn-prev",
+        prevEl: ".review__-btn-prev",
       },
     });
   }

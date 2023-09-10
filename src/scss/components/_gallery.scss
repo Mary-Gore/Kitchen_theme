@@ -34,10 +34,6 @@
   }
 
   &__btn-prev {
-    position: relative;
-    width: 23px;
-    height: 16px;
-
     &::before {
       top: 50%;
       margin-top: -8px;
@@ -46,15 +42,11 @@
   }
 
   &__btn-next {
-    position: relative;
-    width: 23px;
-    height: 16px;
-
     &::before {
       top: 50%;
       margin-top: -8px;
       right: -48px;
-   }
+    }
   }
 
   &__fraction {
