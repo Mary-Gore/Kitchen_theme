@@ -140,31 +140,6 @@ legend {
   }
 }
 
-.btn-prev {
-  position: relative;
-  width: 23px;
-  height: 16px;
-
-  &::before {
-    content: url("../img/iconArrow.svg");
-    position: absolute;
-    height: 100%;
-  }
-}
-
-.btn-next {
-  position: relative;
-  width: 23px;
-  height: 16px;
-
-  &::before {
-    content: url("../img/iconArrow.svg");
-    position: absolute;
-    height: 100%;
-    transform: rotate(180deg);
-  }
-}
-
 .container {
   margin: 0 auto;
   padding: 0 $container-offset;

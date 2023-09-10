@@ -26,30 +26,45 @@
     }
   }
 
-  &__nav-wrap {
+  &-nav-wrap {
     margin-top: 60px;
     display: flex;
     justify-content: center;
     max-height: 16px;
   }
 
-  &__btn-prev {
+  &-btn-prev {
+    position: relative;
+    width: 23px;
+    height: 16px;
+
     &::before {
+      content: url("../img/iconArrow.svg");
+      position: absolute;
+      height: 100%;
       top: 50%;
       margin-top: -8px;
       left: -48px;
     }
   }
 
-  &__btn-next {
+  &-btn-next {
+    position: relative;
+    width: 23px;
+    height: 16px;
+
     &::before {
       top: 50%;
       margin-top: -8px;
       right: -48px;
+      content: url("../img/iconArrow.svg");
+      position: absolute;
+      height: 100%;
+      transform: rotate(180deg);
     }
   }
 
-  &__fraction {
+  &-fraction {
     line-height: 1;
     width: auto !important;
 

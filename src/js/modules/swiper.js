@@ -6,7 +6,7 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
   speed: 800,
 
   pagination: {
-    el: '.gallery__fraction',
+    el: '.gallery-fraction',
     type: 'fraction',
     formatFractionCurrent: function (number) {
       return ('0' + number).slice(-2);
@@ -21,8 +21,8 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
     }
   },
   navigation: {
-    nextEl: ".gallery__btn-next",
-    prevEl: ".gallery__btn-prev",
+    nextEl: ".gallery-btn-next",
+    prevEl: ".gallery-btn-prev",
   },
   breakpoints: {
     992: {
@@ -58,13 +58,12 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
   speed: 800,
   spaceBetween: 10,
   navigation: {
-    nextEl: ".reviews__btn-next",
-    prevEl: ".reviews__btn-prev",
+    nextEl: ".reviews-btn-next",
+    prevEl: ".reviews-btn-prev",
   },
 });
 
-//document.querySelectorAll('.btn-prev').forEach(item => item.classList.remove('swiper-button-lock'));
-//document.querySelectorAll('.btn-next').forEach(item => item.classList.remove('swiper-button-lock'));
+
 
 
 

@@ -1,6 +1,6 @@
 .reviews {
   background-color: $dark-bg;
-  
+
   &__subtitle {
     @include mobile {
       margin-bottom: 0;
@@ -163,7 +163,7 @@
     }
   }
 
-  &__navigation {
+  &-navigation {
     position: absolute;
     left: 50%;
     display: flex;
@@ -175,6 +175,31 @@
 
     @include mobile {
       bottom: 40px;
+    }
+  }
+
+  &-btn-prev {
+    position: relative;
+    width: 23px;
+    height: 16px;
+
+    &::before {
+      content: url("../img/iconArrow.svg");
+      position: absolute;
+      height: 100%;
+    }
+  }
+
+  &-btn-next {
+    position: relative;
+    width: 23px;
+    height: 16px;
+
+    &::before {
+      content: url("../img/iconArrow.svg");
+      position: absolute;
+      height: 100%;
+      transform: rotate(180deg);
     }
   }
 }
