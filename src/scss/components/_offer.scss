@@ -1,17 +1,17 @@
 .offer {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
-      rgba(0, 0, 0, 0.00) 100%);
-  background-image: url("@img/offer-bg.jpg");
-  background-repeat: no-repeat;
+      rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("@img/offer-bg@2x.jpg");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
+        rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg@2x.jpg") no-repeat;
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("@img/offer-bg@3x.jpg");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
+        rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg@3x.jpg") no-repeat;
   }
 
   height: 650px;
