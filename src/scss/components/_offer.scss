@@ -6,14 +6,15 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-resolution: 192dpi) {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
-        rgba(0, 0, 0, 0.00) 100%);
+  @media (min-resolution: 2ddpx) {
     background-image: url("@img/offer-bg@2x.jpg");
-    background-repeat: no-repeat;
-    background-position: 70%;
+    background-position: 90%;
   }
 
+  @media (min-resolution: 3ddpx) {
+    background-image: url("@img/offer-bg@3x.jpg");
+    background-position: 90%;
+  }
 
   height: 650px;
 
