@@ -6,12 +6,12 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-resolution: 2ddpx) {
+  @media (min-resolution: 2dppx) {
     background-image: url("@img/offer-bg@2x.jpg");
     background-position: 90%;
   }
 
-  @media (min-resolution: 3ddpx) {
+  @media (min-resolution: 3dppx) {
     background-image: url("@img/offer-bg@3x.jpg");
     background-position: 90%;
   }
