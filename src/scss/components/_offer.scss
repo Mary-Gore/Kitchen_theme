@@ -1,24 +1,19 @@
 .offer {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
       rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
-        rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 70% center;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
+        rgba(0, 0, 0, 0.00) 100%),
+      url("@img/offer-bg@2x.jpg");
   }
 
   @media (min-resolution: 3dppx) {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
         rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg@3x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 70% center;
   }
 
   height: 650px;
