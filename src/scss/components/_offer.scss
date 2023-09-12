@@ -1,12 +1,12 @@
 .offer {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
-      rgba(0, 0, 0, 0.00) 100%), url("@img/no-resize/offer-bg.jpg") no-repeat;
+      rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: 192dpi) {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
-        rgba(0, 0, 0, 0.00) 100%), url("@img/no-resize/offer-bg@2x.jpg") no-repeat;
+        rgba(0, 0, 0, 0.00) 100%), url("@img/offer-bg@2x.jpg") no-repeat;
   }
 
 
