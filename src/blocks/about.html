@@ -20,7 +20,11 @@
           <p>Привлекаем опытных специалистов в&nbsp;штат</p>
         </li>
       </ul>
-      <img class="about__main-img" src="@img/about.jpg" alt="happy people img">
+      <picture>
+        <source type="image/webp" srcset="@img/about.jpg 1x, @img/about@2x.jpg 2x, @img/about@3x.jpg 3x">
+        <img class="about__main-img" src="@img/about.jpg" srcset="@img/about@2x.jpg 2x, @img/about@3x.jpg 3x"
+          alt="happy people img">
+      </picture>
       <div class="about__glass-card glass-card">
         За&nbsp;всё время нашего существования мы&nbsp;всегда руководствовались
         пословицей: &laquo;Что посеешь, то&nbsp;и&nbsp;пожнёшь&raquo;. Брак на&nbsp;производстве <span
