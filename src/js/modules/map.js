@@ -8,7 +8,7 @@ function init() {
 
   const placemark = new ymaps.Placemark(center, {}, {
     iconLayout: 'default#image',
-    iconImageHref: `/Kitchen_theme/img/iconGeo.svg`,
+    iconImageHref: `./img/iconGeo.svg`,
     iconImageSize: [40, 55],
     iconImageOffset: [-80, -10]
   });
