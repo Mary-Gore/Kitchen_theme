@@ -6,9 +6,10 @@
   background-size: cover;
 
   @media (min-resolution: 192dpi) {
-    background-: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%,
         rgba(0, 0, 0, 0.00) 100%);
     background-image: url("@img/offer-bg@2x.jpg") no-repeat;
+    background-position: 70%;
     background-size: 50%;
   }
 
