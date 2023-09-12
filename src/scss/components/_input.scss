@@ -41,12 +41,7 @@
     font-variant-numeric: lining-nums;
     font-feature-settings: 'lnum';
 
-    &::-webkit-input-placeholder {
-      color: $muted;
-      font-weight: 600;
-    }
-
-    &::-moz-placeholder {
+    &::placeholder {
       color: $muted;
       font-weight: 600;
     }
