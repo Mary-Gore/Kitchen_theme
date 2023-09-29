@@ -62,7 +62,7 @@ export const sendForm = id => {
 
     elems.forEach(phone => {
       const mask = new IMask(phone, {
-        mask: "+7(000)000-00-00",
+        mask: "+7 (000) 000-00-00",
         lazy: false
       })
       phone.addEventListener('input', () => {
