@@ -153,14 +153,7 @@
 
     @include mobile-m {
       flex-wrap: wrap;
-    }
-
-    @include mobile-s {
-      justify-content: space-between;
-    }
-
-    @include mobile-xs {
-      justify-content: unset;
+      justify-content: center;
     }
   }
 
@@ -174,14 +167,29 @@
       @include tablet {
         margin-right: 50px;
       }
+    }
 
-      @include mobile-m {
-        margin-top: 12px;
+    &:nth-child(3) {
+      @include mobile-s {
+        margin-right: 0;
       }
     }
 
     &:last-child {
       margin-left: auto;
+
+      @include mobile-m {
+        margin-left: 0;
+      }
+
+      @include mobile-s {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @include mobile-m {
+      margin-top: 12px;
     }
   }
 
