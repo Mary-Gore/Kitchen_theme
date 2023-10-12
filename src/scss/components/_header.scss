@@ -9,7 +9,7 @@
     }
   }
 
-  @include mobile-xs {
+  @include mobile-s {
     padding: 18px 0;
   }
 
@@ -31,7 +31,7 @@
       display: none;
     }
 
-    @include mobile-xs {
+    @include mobile-s {
       display: none;
     }
   }
@@ -41,7 +41,7 @@
     flex-direction: column;
     align-items: flex-end;
 
-    @include mobile-xs {
+    @include mobile-s {
       display: none;
     }
   }
@@ -81,7 +81,7 @@
     height: 14px;
     display: none;
 
-    @include mobile-xs {
+    @include mobile-s {
       display: block;
     }
   }
@@ -144,15 +144,23 @@
     }
 
     &__phone-stroke {
-      margin-bottom: 35px;
       padding: 15px 0;
-      width: 100%;
       font-size: 14px;
       font-weight: 700;
       color: $accent;
       border-radius: 6px;
       border: 2px solid $accent;
       text-align: center;
+
+      @include mobile-s {
+        width: 300px;
+        margin: 0 auto 35px;
+      }
+
+      @include mobile-xs {
+        width: 100%;
+        margin: 0 0 35px;
+      }
     }
 
     &__social {
@@ -180,7 +188,7 @@
     }
   }
 
-  @include mobile-xs {
+  @include mobile-s {
     align-items: start;
   }
 }

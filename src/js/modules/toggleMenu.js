@@ -13,5 +13,7 @@ export const toggleMenu = () => {
     if (e.target.closest('.burger') || e.target.closest('.header__burger-wrapper')) {
       handlerMenu(e.target);
     }
+
+    document.body.classList.toggle('no-scroll');
   });
 }

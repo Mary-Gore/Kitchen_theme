@@ -2,16 +2,18 @@
   background-color: $grey-bg;
 
   &__steps {
-    grid-column: 3/10;
+    grid-column: span 12;
     display: grid;
-    grid-template: repeat(2, auto) / repeat(2, 370px);
+    grid-template: repeat(2, auto)/repeat(2, 370px);
     gap: 120px;
+    justify-content: center;
+
 
     &-item {
       display: flex;
       align-items: center;
 
-      @include mobile-xs {
+      @include mobile-s {
         margin: 0 auto;
         flex-direction: column;
       }
@@ -26,7 +28,7 @@
         max-width: 220px;
       }
 
-      @include mobile-xs {
+      @include mobile-s {
         margin-bottom: 10px;
         font-size: 16px;
         max-width: 100%;
@@ -45,7 +47,7 @@
       gap: 60px;
     }
 
-    @include mobile-xs {
+    @include mobile-s {
       grid-column: span 4;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, auto);
@@ -59,11 +61,11 @@
         width: 75px;
       }
 
-      @include mobile-xs {
+      @include mobile-s {
         margin-bottom: 20px;
       }
 
-      @include mobile-xs {
+      @include mobile-s {
         margin: 0 0 25px 0;
         width: 65px;
       }
@@ -72,7 +74,7 @@
 
   &__item-content {
 
-    @include mobile-xs {
+    @include mobile-s {
       text-align: center;
     }
   }

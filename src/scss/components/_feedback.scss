@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
 
-    @include mobile-xs {
+    @include mobile-s {
       flex-direction: column;
     }
   }
@@ -19,7 +19,7 @@
       width: 230px;
     }
 
-    @include mobile-xs {
+    @include mobile-s {
       margin: 0 0 25px;
       min-width: unset;
       width: 100%;
@@ -43,7 +43,7 @@
       width: 230px;
     }
 
-    @include mobile-xs {
+    @include mobile-s {
       width: 100%;
     }
   }

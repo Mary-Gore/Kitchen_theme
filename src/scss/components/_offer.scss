@@ -27,7 +27,7 @@
       font-size: 20px;
     }
 
-    @include mobile-xs {
+    @include mobile-s {
       margin: 0 auto 70px;
       font-size: 16px;
       max-width: 235px;
@@ -47,7 +47,7 @@
       margin-top: 100px;
     }
 
-    @include mobile-xs {
+    @include mobile-s {
       text-align: center;
     }
   }
@@ -64,7 +64,7 @@
       font-size: 35px;
     }
 
-    @include mobile-xs {
+    @include mobile-s {
       margin: 0 auto 12px;
       max-width: 245px;
       font-size: 25px;
@@ -97,32 +97,49 @@
       font-size: 14px;
     }
 
+    @include laptop {
+      right: 20px;
+    }
+
     @include tablet {
       left: 20px;
       right: 20px;
     }
 
-    @include mobile-xs {
+    @include mobile-m {
       flex-direction: column;
+      bottom: -530px;
+      right: unset;
+      left: 20px;
+      max-width: 320px;
+    }
+
+    @include mobile-s {
       bottom: -580px;
       left: 50%;
-      right: unset;
       max-width: unset;
       transform: translateX(-50%);
     }
   }
 
   &__glass-card {
-    padding: 23px 0 23px 20px;
+    padding: 23px 20px 23px;
     width: 238px;
 
     &:not(:last-child) {
       margin-right: 20px;
 
-      @include mobile-xs {
+
+      @include mobile-m {
         margin-right: 0;
         margin-bottom: 20px;
+        min-width: 238px;
+        max-width: 100%;
       }
+    }
+
+    @include laptop {
+      width: unset;
     }
   }
 

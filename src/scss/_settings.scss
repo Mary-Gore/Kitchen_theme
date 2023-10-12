@@ -37,7 +37,7 @@ body {
   font-variant-numeric: lining-nums;
   font-feature-settings: 'lnum';
 
-  @include mobile-xs {
+  @include mobile-s {
     font-size: 15px;
   }
 }
@@ -115,6 +115,9 @@ legend {
 }
 
 /* Base classes */
+.no-scroll {
+  overflow: hidden;
+}
 
 .grid {
   display: grid;
@@ -126,7 +129,7 @@ legend {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  @include mobile-xs {
+  @include mobile-s {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -154,7 +157,7 @@ legend {
     padding: 130px 0;
   }
 
-  @include mobile-xs {
+  @include mobile-m {
     padding: 90px 0;
   }
 }
@@ -171,7 +174,7 @@ legend {
     font-size: 30px;
   }
 
-  @include mobile-xs {
+  @include mobile-s {
     margin-bottom: 10px;
     font-size: 20px;
   }
@@ -188,7 +191,7 @@ legend {
     margin-bottom: 65px;
   }
 
-  @include mobile-xs {
+  @include mobile-s {
     margin: 0 auto 40px;
     font-size: 16px;
     max-width: 160px;
@@ -311,7 +314,7 @@ legend {
     }
   }
 
-  @include mobile-xs {
+  @include mobile-m {
     display: block;
   }
 }
