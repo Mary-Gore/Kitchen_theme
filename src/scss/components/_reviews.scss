@@ -2,7 +2,7 @@
   background-color: $dark-bg;
 
   &__subtitle {
-    @include mobile {
+    @include mobile-xs {
       margin-bottom: 0;
     }
   }
@@ -16,7 +16,7 @@
     max-width: 817px;
     height: 573px;
 
-    @include mobile {
+    @include mobile-xs {
       height: 490px;
     }
   }
@@ -26,7 +26,7 @@
     top: 105px;
 
 
-    @include mobile {
+    @include mobile-xs {
       height: 380px !important;
     }
   }
@@ -57,13 +57,13 @@
       border: 2px solid $accent;
       object-fit: cover;
 
-      @include mobile {
+      @include mobile-xs {
         width: 104px;
         height: 104px;
       }
     }
 
-    @include mobile {
+    @include mobile-xs {
       width: 140px;
       height: 140px;
       bottom: 70px;
@@ -82,7 +82,7 @@
       font-size: 18px;
       font-weight: 500;
 
-      @include mobile {
+      @include mobile-xs {
         margin: 30px 0 12px;
         font-size: 16px;
       }
@@ -93,7 +93,7 @@
       min-width: 520px;
       max-width: 600px;
 
-      @include mobile {
+      @include mobile-xs {
         min-width: 220px;
         max-width: 220px;
         text-align: center;
@@ -105,7 +105,7 @@
       }
     }
 
-    @include mobile {
+    @include mobile-xs {
       min-height: unset;
       height: 380px;
     }
@@ -118,7 +118,7 @@
     transform: translateX(-50%);
     text-align: center;
 
-    @include mobile {
+    @include mobile-xs {
       top: 70px;
       max-width: 200px;
     }
@@ -129,7 +129,7 @@
     top: 40px;
     left: -80px;
 
-    @include mobile {
+    @include mobile-xs {
       display: none;
     }
   }
@@ -139,7 +139,7 @@
     right: -80px;
     bottom: -40px;
 
-    @include mobile {
+    @include mobile-xs {
       display: none;
     }
   }
@@ -177,7 +177,7 @@
     bottom: 73px;
     z-index: 3;
 
-    @include mobile {
+    @include mobile-xs {
       bottom: 40px;
     }
   }

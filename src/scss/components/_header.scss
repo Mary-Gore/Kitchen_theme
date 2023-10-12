@@ -9,7 +9,7 @@
     }
   }
 
-  @include small-tablet {
+  @include mobile-xs {
     padding: 18px 0;
   }
 
@@ -31,7 +31,7 @@
       display: none;
     }
 
-    @include small-tablet {
+    @include mobile-xs {
       display: none;
     }
   }
@@ -41,7 +41,7 @@
     flex-direction: column;
     align-items: flex-end;
 
-    @include small-tablet {
+    @include mobile-xs {
       display: none;
     }
   }
@@ -81,7 +81,7 @@
     height: 14px;
     display: none;
 
-    @include small-tablet {
+    @include mobile-xs {
       display: block;
     }
   }
@@ -180,7 +180,7 @@
     }
   }
 
-  @include small-tablet {
+  @include mobile-xs {
     align-items: start;
   }
 }

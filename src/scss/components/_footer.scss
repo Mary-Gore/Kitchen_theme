@@ -5,7 +5,7 @@
   &__main-wrapper {
     display: flex;
 
-    @include mobile {
+    @include mobile-xs {
       flex-direction: column;
       text-align: center;
     }
@@ -23,7 +23,7 @@
       &:not(:last-child) {
         margin-bottom: 15px;
 
-        @include mobile {
+        @include mobile-xs {
           margin-bottom: 12px;
         }
       }
@@ -33,7 +33,7 @@
       margin-top: 35px;
     }
 
-    @include mobile {
+    @include mobile-xs {
       margin-top: 30px;
       align-items: center;
     }
@@ -48,7 +48,7 @@
     &-item {
       margin-bottom: 20px;
 
-      @include mobile {
+      @include mobile-xs {
         margin-bottom: 15px;
       }
     }
@@ -58,7 +58,7 @@
       column-gap: 3em;
     }
 
-    @include mobile {
+    @include mobile-xs {
       margin: 35px 0 40px 0px;
       column-count: 1;
       column-gap: unset;
@@ -101,7 +101,7 @@
       display: none;
     }
 
-    @include mobile {
+    @include mobile-xs {
       display: flex;
     }
   }
@@ -109,7 +109,7 @@
   &__phone-content {
     margin-left: auto;
 
-    @include mobile {
+    @include mobile-xs {
       display: none !important;
     }
   }
@@ -117,7 +117,7 @@
   &__btn-secondary {
     margin-bottom: 25px;
 
-    @include mobile {
+    @include mobile-xs {
       margin-bottom: 0;
     }
   }
@@ -137,7 +137,7 @@
   &__secondary-wrapper {
     margin-top: 40px;
 
-    @include mobile {
+    @include mobile-xs {
       margin-top: 45px;
     }
   }
@@ -145,7 +145,7 @@
   &__secondary-list {
     display: flex;
 
-    @include mobile {
+    @include mobile-xs {
       flex-wrap: wrap;
     }
   }
@@ -161,7 +161,7 @@
         margin-right: 50px;
       }
 
-      @include mobile {
+      @include mobile-xs {
         margin-top: 12px;
       }
     }
@@ -169,7 +169,7 @@
     &:last-child {
       margin-left: auto;
 
-      @include mobile {
+      @include mobile-xs {
         margin: 10px 0 0 0;
       }
     }
@@ -179,12 +179,12 @@
     padding: 40px 0 40px;
   }
 
-  @include mobile {
+  @include mobile-xs {
     padding: 35px 0 30px;
   }
 
   &__inner-ul {
-    @include mobile {
+    @include mobile-xs {
       display: none;
     }
   }

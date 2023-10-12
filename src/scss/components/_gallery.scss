@@ -22,7 +22,7 @@
       filter: brightness(90%);
     }
 
-    @include mobile {
+    @include mobile-xs {
       height: 100% !important;
     }
   }

@@ -4,11 +4,11 @@
   &__section {
     padding: 266px 0 190px;
 
-    @include small-tablet {
+    @include mobile-xs {
       padding: 740px 0 190px;
     }
 
-    @include mobile {
+    @include mobile-xs {
       padding: 670px 0 190px;
     }
   }
@@ -44,7 +44,7 @@
           margin: 0 70px 0 0;
         }
 
-        @include small-tablet {
+        @include mobile-xs {
           margin: 0 0 30px;
         }
       }
@@ -59,7 +59,7 @@
       flex-direction: row;
     }
 
-    @include small-tablet {
+    @include mobile-xs {
       margin: 0 auto;
       flex-direction: column;
       text-align: center;
@@ -71,7 +71,7 @@
       margin-top: 50px;
     }
 
-    @include mobile {
+    @include mobile-xs {
       margin-top: 40px;
     }
   }
@@ -80,7 +80,7 @@
     margin-right: 15px;
     line-height: 1;
 
-    @include mobile {
+    @include mobile-xs {
       margin-right: 8px;
       font-size: 40px;
     }
@@ -108,7 +108,7 @@
       transform: translateX(50%);
     }
 
-    @include small-tablet {
+    @include mobile-xs {
       right: 25px;
       left: 25px;
       min-width: 400px;
@@ -116,7 +116,7 @@
       transform: translateX(0);
     }
 
-    @include mobile {
+    @include mobile-xs {
       padding: 20px;
       right: 12px;
       left: 12px;
@@ -133,7 +133,7 @@
   #about-dots {
     display: none;
 
-    @include mobile {
+    @include mobile-xs {
       display: inline;
     }
   }
@@ -141,7 +141,7 @@
   #about-more {
     display: inline-block;
 
-    @include mobile {
+    @include mobile-xs {
       display: none;
     }
   }

@@ -11,7 +11,7 @@
       display: flex;
       align-items: center;
 
-      @include small-tablet {
+      @include mobile-xs {
         margin: 0 auto;
         flex-direction: column;
       }
@@ -26,7 +26,7 @@
         max-width: 220px;
       }
 
-      @include mobile {
+      @include mobile-xs {
         margin-bottom: 10px;
         font-size: 16px;
         max-width: 100%;
@@ -45,7 +45,7 @@
       gap: 60px;
     }
 
-    @include mobile {
+    @include mobile-xs {
       grid-column: span 4;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, auto);
@@ -59,11 +59,11 @@
         width: 75px;
       }
 
-      @include small-tablet {
+      @include mobile-xs {
         margin-bottom: 20px;
       }
 
-      @include mobile {
+      @include mobile-xs {
         margin: 0 0 25px 0;
         width: 65px;
       }
@@ -72,7 +72,7 @@
 
   &__item-content {
 
-    @include small-tablet {
+    @include mobile-xs {
       text-align: center;
     }
   }
